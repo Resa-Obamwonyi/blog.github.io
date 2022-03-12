@@ -1,15 +1,49 @@
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75% 25%;
+  grid-gap: 1em;
+}
+
+#home-btn{
+  display: block;
+  width: 3em;
+  padding: 1em;
+  color: #fafafa;
+  font-size: 0.8em;
+  background-color: #61714d;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+}
+
+.left-block {
+  padding: 0.5em 0.25em;
+}
+
+.left-block p {
+  line-height: 2em;
+}
+
+.right-block {
+  padding: 0em 0.25em 1em 0.25em;
+}
+
 #blog-post-title {
   font-size: 2em;
   margin: 0;
 }
+
 #blog-date {
   font-size: 0.7em;
   margin: 0;
   font-weight: 500;
 }
+
 .blog-subheading {
   font-size: 1.6em;
 }
+
 .blog-post-info {
   font-size: 0.8em;
   margin: 0.5em auto;
@@ -21,8 +55,13 @@
   height: 300px;
   border-radius: 0.25em;
 }
+
 #img-caption {
   font-size: 0.5em;
+}
+
+.anxiety-tips li{
+line-height: 2em;
 }
 
 .btns {
@@ -30,6 +69,7 @@
   justify-content: center;
   margin: auto 20%;
 }
+
 .btn-right {
   margin-left: 5%;
 }
@@ -44,28 +84,39 @@
   font-weight: 600;
 }
 
-/* #61714d
-#c2a887
-#dfaf5e
-#8fae93
-#6d152b
-#fafafa */
+#input-subscribe{
+  height: 2em;
+  font-size: 0.8em;
+}
+
+#btn-subscribe {
+  background-color: #61714d;
+  height: 2.5em;
+  border-radius: 0;
+}
 
 @media (min-width: 760px) {
-  main {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100% 100%;
-    grid-gap: 2em;
-    /* grid-template-areas: top  bottom; */
+  .main {
+    grid-template-rows: 70% 30%;
   }
+
+  .left-block {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .right-block {
+    width: 80%;
+    margin: 0 10%;
+  }
+
 }
 
 @media (min-width: 1000px) {
-  main {
+  .main {
     grid-template-columns: 60% 35%;
     grid-template-rows: 100% 100%;
     grid-gap: 2em;
     margin-left: 2.5%;
-    /* grid-template-areas: top  bottom; */
   }
 }

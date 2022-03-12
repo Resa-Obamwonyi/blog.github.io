@@ -1,0 +1,42 @@
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 230px;
+  width: 90%;
+  margin: auto 5%;
+}
+
+.card-title {
+  color: #6d152b;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.card-btn {
+  display: block;
+  padding: 1em 0;
+  width: 30%;
+  margin: auto 35%;
+  border-radius: 1em;
+  color: #fafafa;
+  font-size: 0.8em;
+  background-color: #6d152b;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+.card-preview {
+  text-align: center;
+  padding: auto;
+  width: 90%;
+  margin: 1em 5%;
+}
+
+@media (min-width: 1000px) {
+  .cards {
+    display: flex;
+  }
+  .card {
+    margin: auto 1.5%;
+    height: 300px;
+  }
+}
