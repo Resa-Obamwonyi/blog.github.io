@@ -65,18 +65,10 @@
 }
 
 .btns {
-  display: flex;
-  justify-content: center;
-  margin: auto 20%;
-}
-
-.btn-right {
-  margin-left: 5%;
-}
-
-.btn-left {
-  margin-right: 5%;
-  color: #61714d;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 1em;
 }
 
 #quote {
